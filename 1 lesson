@@ -1,0 +1,49 @@
+1. Базовые типы языка Python:
+    - None
+    - логические True, False
+    - числовые:
+        int, 42
+        float, 42.0
+        complex, 42jf
+    - строковые bytes, str
+    - изменяемые коллекции:
+        list() или [] #список
+            a = list(1, 2, 3)
+            a = [1, 2, 3]
+            a[0:4:2] #с 0 по 4 с шагом 2
+            len(a), del a[1] или a.pop(1), a.append(4)
+        set() или {,} #хеш-сет или множество
+            a = set('hello')
+            a = {'hello',}
+        dict() или {} #хеш-таблица
+            a = dict('year' : '2017', 'month' : 'september')
+            a = {'year' : '2017', 'month' : 'september'}
+            a.keys()
+            a.values()
+            a.items()
+    - tuple #кортежи или неизменяемые коллекции
+2. Основные конструкции:
+    - if
+        x = 42
+        if x % 5 == 0:
+            print('fizz')
+        elif x % 3 == 0:
+            print('buzz')
+        else:
+            pass #проходит в любом случае
+        #buzz
+    - while
+        i = 0
+        while i < 10:
+            i += 1
+        # i = 10
+    - for
+        sum = o
+        for i in range(1, 5):
+            sum += i * i
+        # sum = 30
+    - операторы break и continue
+    - range(0, 5, 2) #от 0 до 5 (невключительно) с шагом 2
+    - reversed
+        list(reversed([1, 2, 3])
+        [3, 2, 1]
