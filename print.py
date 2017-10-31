@@ -1,8 +1,11 @@
-def user():
-    login = input('login: ')
-    pswrd = input('password: ')
-    return login, pswrd
+class user:
+    def __init__(self, login, password):
+        self.l = login
+        self.p = password
 
+
+
+login = user(input('login: '), input('password: '))
 
 
 def logon():
@@ -12,10 +15,11 @@ def logon():
 
 
 def compare():
-    if logon() == user():
-        print('welcome, ' + login.user)
+    if logon() == (login.l, login.p):
+        print('welcome, ' + login.l)
     else:
         print('Wrong login or password')
+        compare()
 
 
 compare()
